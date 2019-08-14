@@ -23,7 +23,7 @@ This SWIP is part of a series of SWIPs (but can be implemented on its own). To s
 ![SWIP_Diagrams.svg](./../assets/swip-honey_to_money/SWIP_Diagrams.svg)
 
 ## Motivation
-Nodes keep track of relative balances to each other using an imaginary currency: honey. Since honey is not a currency in which nodes can settle their balances with each other–it is merely a unit of accounting–there is a requirement to facilitate converting honey to a currency. Furthermore, it is desirable that this conversion rate can fluctuate since:
+Nodes keep track of balances relative to each other using an imaginary currency: honey. Since honey is not a currency in which nodes can settle their balances with each other–it is merely a unit of accounting–there is a requirement to facilitate converting honey to a currency. Furthermore, it is desirable that this conversion rate can fluctuate since:
 
 * The Swarm developers plan to initially set the price of honey very low but progressively increase it, to the point where it is sufficiently high to incentivize nodes to offer their service to the network while being low enough not to scare away potential users of Swarm. 
 * The price of the counterpart currency is expected to fluctuate in value against the costs of operating a Swarm node. As the real benefits (i.e. the worth of your compensation) of operating a Swarm node shouldn't fluctuate, the honey price should fluctuate inversely against the fluctuations of currency. If this happens, the real benefit stays equal, regardless of price fluctuations of the currency in which compensation is paid. 
