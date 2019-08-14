@@ -44,7 +44,7 @@ In the current implementation honey prices are hardcoded. When this price change
 Prices in the Swarm should be able to change over time. However, due to the nature of Swarm–specifically, independent connections between pairs of nodes each with their individual accounting and payments–there is no clear price discovery mechanism. Furthermore, since Swarm nodes are expected to be conduits for both payments and data (buy from one peer and sell to the other) it is necessary for nodes to coordinate price changes with all of their peers. In short, there is a need for a mechanism for network-wide changes in pricing that the peer-to-peer routing and accounting modules do not provide.
 
 ## Backwards Compatibility 
-This SWIP is backwards compatible as long as the price oracle quotes the same prices as is currently hard-coded in non-upgraded Swarm nodes. It is up to the owner of the `MsgToHoney` oracle to ensure that prices are not updated too much while not all nodes run the new Swarm version. Currently, the Swarm is not running a live test net for settling prices, so no problems are expected with this SWIP if it's implemented before Swarm goes live with price-incentivization. 
+This SWIP is backwards compatible as long as the price oracle quotes the same prices as the ones currently hardcoded in non-upgraded Swarm nodes. It is up to the owner of the `MsgToHoney` oracle to ensure that prices are not updated too much while not all nodes run the new Swarm version. Currently, Swarm is not running a live testnet for settling prices, so no problems are expected with this SWIP if it is implemented before Swarm goes live with price-incentivization. 
 
 ## Test Cases
 Not currently available
