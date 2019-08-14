@@ -9,7 +9,7 @@ Created: 31-07-2019
 ---
 
 ## Simple summary 
-Swarm needs a mechanism to allow fluctuation of the exchange rate between honey (Swarms internal accounting unit) and the currency used to pay. We propose an on-chain price oracle that returns an exchange rate + validUntil tuple.  
+Swarm needs a mechanism to allow fluctuation of the exchange rate between honey (Swarm's internal accounting unit) and the currency used to pay for transferring data. This SWIP proposes an on-chain price oracle that provides an exchange rate with an associated expiration.
 
 ## Abstract 
 The ability to update prices is required in order to:
