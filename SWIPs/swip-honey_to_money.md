@@ -15,11 +15,11 @@ Swarm needs a mechanism to allow fluctuation of the exchange rate between honey 
 The ability to update prices is required in order to:
 * Facilitate experimentation with the absolute price of honey (e.g. start at a low price and gradually increase);
 * Off-set fluctuations of the currency used to pay;
-* Lower the price of Swarm in the long-run as the costs of operating a Swarm node decreases.
+* Lower the price of Swarm in the long-run as the costs of operating a Swarm node decrease.
 
-We propose an on-chain price oracle that returns the current exchange rate when queried. The price-oracle will be initially managed by Swarm developers and stakeholders.
+The proposal is an on-chain price oracle that returns the current exchange rate when queried. The price oracle will be initially managed by Swarm developers and stakeholders.
 
-This SWIP is part of a series of SWIPs (but can be implemented on it's own). To see the full picture, please refer to [swip-message_to_honey](./swip-message_to_honey.md), [swip-multiple](./swip-honey_to_money.md), [swip-multiple_payment_processing_support](./swip-multiple_payment_processing_support.md) and the diagram below:
+This SWIP is part of a series of SWIPs (but can be implemented on its own). To see the full picture, please refer to [swip-message_to_honey](./swip-message_to_honey.md), [swip-multiple](./swip-honey_to_money.md), [swip-multiple_payment_processing_support](./swip-multiple_payment_processing_support.md) and the diagram below:
 ![SWIP_Diagrams.svg](./../assets/swip-honey_to_money/SWIP_Diagrams.svg)
 
 ## Motivation
