@@ -45,7 +45,7 @@ We need a way for prices in the Swarm to change over time. However, due to the n
 By externalising the price to an oracle, we can completely decouple the basic functioning of Swarm - which is heavily focused on data availability, delivery, and security considerations - from the price discovery. By building support for price oracles, we can coordinate price changes across the network, and set the stage for future experimentation with various mechanisms for setting prices, from DAOs, to bonding curves, to fixed prices. This SWIP makes no recommendation for the eventual pricing mechanism, it only prepares the network for adopting them in future.
 
 ## Backwards Compatibility 
-This SWIP is backward compatible as long as the price oracle quotes the same prices as is currently hard-coded in non-upgraded Swarm nodes. It is up to the owner of the MsgToHoney oracle to ensure that he does not update prices too much while not all nodes that run are on the new Swarm version. Currently, the Swarm is not running with a live test net for settling prices, so we expect no problems with this SWIP if it is implemented before the Swarm will go live with price-incentivization. 
+This SWIP is backwards compatible as long as the price oracle quotes the same prices as is currently hard-coded in non-upgraded Swarm nodes. It is up to the owner of the `MsgToHoney` oracle to ensure that prices are not updated too much while not all nodes run the new Swarm version. Currently, the Swarm is not running a live test net for settling prices, so no problems are expected with this SWIP if it's implemented before Swarm goes live with price-incentivization. 
 
 ## Test Cases
 Not currently available
