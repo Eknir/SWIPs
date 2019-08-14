@@ -35,10 +35,10 @@ In the current implementation honey prices are hardcoded. When this price change
 
 ## Specification
 * The Swarm source code will reference the address of a `HoneyToMoney` price oracle
-* The price oracle implements the `HoneyToMoney` interface (to-be specified) 
+* The price oracle implements the `HoneyToMoney` interface (to be specified) 
 * The `HoneyToMoney` contract will be initially owned by an M/N multi-sig of Swarm developers and stakeholders.
-* Before sending a payment (denominated in currency), a node will query the `HoneyToMoney` price oracle to get the most up-to-date price conversion. 
-* Upon receiving a payment, nodes will determine the honey amount paid by looking up and dividing by the currently valid price from the oracle. This might cause payment imbalances between nodes, as the oracle might be queried one or several blocks before the transaction was sent. To avoid this situation, we propose that nodes include a payload with the transaction, specifying the time at which the oracle was queried.
+* Before sending a payment (denominated in currency) a node will query the `HoneyToMoney` price oracle to get the most up-to-date price conversion. 
+* Upon receiving a payment, nodes will determine the honey amount paid by looking up and dividing by the currently valid price from the oracle. This might cause payment imbalances between nodes, as the oracle might be queried one or several blocks before the transaction is sent. To avoid this situation it is proposed that nodes include a payload with the transaction, specifying the time at which the oracle was queried.
 
 ## Rationale
 We need a way for prices in the Swarm to change over time. However, due to the nature of Swarm - specifically independent connections between pairs of nodes each with their individual accounting and payments - there is no clear price discovery mechanism. Furthermore, since Swarm nodes are expected to be conduits for both payments and data (buy from one peer and sell to the other) it is necessary for nodes to coordinate price changes with all their peers. In short, we need a mechanism for network-wide changes in pricing that the peer-to-peer routing and accounting does not provide.
